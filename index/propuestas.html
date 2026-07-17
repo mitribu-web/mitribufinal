@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Propuestas recibidas — mi tribu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="app-body">
+
+<div class="sidebar-overlay"></div>
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <button class="sidebar-close" aria-label="Cerrar menú"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#1A1A2E" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <div class="sidebar-logo">mi <b>trib</b><b class="u">u</b></div>
+    <div class="sidebar-role">Panel de marca</div>
+    <ul class="sidebar-nav">
+      <li><a href="publicar-proyecto.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Publicar proyecto</a></li>
+      <li><a href="../servicios.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Explorar servicios</a></li>
+      <li><a href="propuestas.html" class="active"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Mis proyectos</a></li>
+      <li><a href="pagos.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.8"/></svg>Pagos y facturación</a></li>
+      <li><a href="#" onclick="return false;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Configuración</a></li>
+    </ul>
+    <div class="sidebar-foot">
+      <a href="../index.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M11 4l-7 8 7 8M4 12h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Volver al sitio</a>
+      <a href="#" class="js-logout"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Cerrar sesión</a>
+    </div>
+  </aside>
+
+  <div>
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <button class="sidebar-toggle icon-btn" aria-label="Abrir menú"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#1A1A2E" stroke-width="2" stroke-linecap="round"/></svg></button>
+        <div class="topbar-title">Propuestas recibidas</div>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-avatar">
+          <div class="avatar-circle grad-circle js-user-initials">MP</div>
+          <div class="who"><div class="name js-user-name">Mi Marca</div><div class="role js-user-role">Marca / emprendedor</div></div>
+        </div>
+      </div>
+    </div>
+
+    <main class="app-main" id="propuestasWrap">
+      <div class="card" style="margin-bottom:26px;">
+        <span class="eyebrow" style="margin-bottom:6px;">Proyecto activo</span>
+        <h3 id="projTitle" style="font-size:19px;">Diseño de logo para marca de skincare</h3>
+        <p id="projMeta" style="font-size:13.5px;color:var(--gray);margin-top:6px;">Diseño Gráfico · Presupuesto: S/ 500</p>
+      </div>
+
+      <p style="font-size:13.5px;color:var(--gray);margin-bottom:18px;">3 freelancers enviaron propuestas para este proyecto:</p>
+
+      <div class="proposal-card" data-id="p1">
+        <div class="proposal-avatar grad-circle">AL</div>
+        <div class="proposal-body">
+          <div class="proposal-top">
+            <div>
+              <div style="font-weight:700;font-size:15.5px;">Ana López</div>
+              <div style="font-size:12.5px;color:var(--gray);">★ 4.9 · 28 proyectos completados</div>
+            </div>
+            <div class="proposal-price">S/ 450</div>
+          </div>
+          <p class="proposal-msg">"Me encantaría trabajar en tu proyecto. Tengo experiencia en branding para marcas de skincare y puedo entregar 3 propuestas iniciales en 3 días."</p>
+          <div style="display:flex;gap:10px;margin-top:14px;">
+            <button class="btn btn-ghost btn-sm">Ver perfil</button>
+            <button class="btn btn-primary btn-sm js-hire">Contratar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="proposal-card" data-id="p2">
+        <div class="proposal-avatar" style="background:linear-gradient(135deg,#E63975,#6C3CE9);">CT</div>
+        <div class="proposal-body">
+          <div class="proposal-top">
+            <div>
+              <div style="font-weight:700;font-size:15.5px;">Carlos Torres</div>
+              <div style="font-size:12.5px;color:var(--gray);">★ 4.7 · 15 proyectos completados</div>
+            </div>
+            <div class="proposal-price">S/ 380</div>
+          </div>
+          <p class="proposal-msg">"Tengo una identidad visual sólida en marcas de belleza. Te comparto mi portafolio y podemos afinar el brief en una llamada rápida."</p>
+          <div style="display:flex;gap:10px;margin-top:14px;">
+            <button class="btn btn-ghost btn-sm">Ver perfil</button>
+            <button class="btn btn-primary btn-sm js-hire">Contratar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="proposal-card" data-id="p3">
+        <div class="proposal-avatar" style="background:linear-gradient(135deg,#4B22B0,#E63975);">MF</div>
+        <div class="proposal-body">
+          <div class="proposal-top">
+            <div>
+              <div style="font-weight:700;font-size:15.5px;">María Fernández</div>
+              <div style="font-size:12.5px;color:var(--gray);">★ 5.0 · 41 proyectos completados</div>
+            </div>
+            <div class="proposal-price">S/ 520</div>
+          </div>
+          <p class="proposal-msg">"Especializada en branding minimalista. Incluyo manual de marca básico y 2 rondas de ajustes dentro del precio."</p>
+          <div style="display:flex;gap:10px;margin-top:14px;">
+            <button class="btn btn-ghost btn-sm">Ver perfil</button>
+            <button class="btn btn-primary btn-sm js-hire">Contratar</button>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="dashboard.js"></script>
+</body>
+</html>

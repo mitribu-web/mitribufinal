@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar sesión — mi tribu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="app-body">
+
+<div class="login-grid">
+  <div class="login-brand">
+    <a href="../index.html" style="color:#fff;font-family:'Poppins',sans-serif;font-weight:700;font-size:22px;">mi tribu</a>
+    <h2>Conecta con talento creativo y haz crecer tus proyectos.</h2>
+    <p>Encuentra freelancers verificados o accede a nuevos clientes, todo en un solo lugar.</p>
+    <div class="hero-orb grad-circle" style="position:absolute;bottom:-60px;right:-30px;width:200px;height:200px;opacity:0.35;"></div>
+  </div>
+
+  <div class="login-form-side">
+    <div class="login-box">
+      <h3 style="font-size:22px;margin-bottom:6px;">Inicia sesión</h3>
+      <p style="font-size:14px;color:var(--gray);margin-bottom:6px;">Entra a tu cuenta para gestionar tus proyectos o tu perfil.</p>
+
+      <div class="role-toggle">
+        <button type="button" class="active" data-role="marca">Soy una marca</button>
+        <button type="button" data-role="freelancer">Soy freelancer</button>
+      </div>
+
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="f-login-nombre">Nombre</label>
+          <input type="text" id="f-login-nombre" required placeholder="Tu nombre">
+          <div class="field-error">Ingresa tu nombre.</div>
+        </div>
+        <div class="field">
+          <label for="f-login-email">Correo electrónico</label>
+          <input type="email" id="f-login-email" required placeholder="tucorreo@ejemplo.com">
+          <div class="field-error">Ingresa un correo válido.</div>
+        </div>
+        <div class="field">
+          <label for="f-login-pass">Contraseña</label>
+          <input type="password" id="f-login-pass" required placeholder="••••••••">
+          <div class="field-error">Ingresa tu contraseña.</div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;margin-top:6px;">Iniciar sesión →</button>
+      </form>
+
+      <p style="font-size:12.5px;color:var(--gray);margin-top:18px;text-align:center;">
+        Este es un entorno de demostración: cualquier dato te deja entrar, no se envía a ningún servidor.
+      </p>
+      <p style="font-size:13.5px;text-align:center;margin-top:16px;">
+        <a href="../index.html" style="color:var(--purple);font-weight:600;">← Seguir explorando sin iniciar sesión</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi perfil — mi tribu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="app-body">
+
+<div class="sidebar-overlay"></div>
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <button class="sidebar-close" aria-label="Cerrar menú"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#1A1A2E" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <div class="sidebar-logo">mi <b>trib</b><b class="u">u</b></div>
+    <div class="sidebar-role">Panel de freelancer</div>
+    <ul class="sidebar-nav">
+      <li><a href="perfil.html" class="active"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20c1.5-4 4.5-6 7-6s5.5 2 7 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Mi perfil</a></li>
+      <li><a href="../servicios.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Explorar servicios</a></li>
+      <li><a href="propuestas.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Mis propuestas</a></li>
+      <li><a href="pagos.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.8"/></svg>Pagos y facturación</a></li>
+      <li><a href="#" onclick="return false;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Configuración</a></li>
+    </ul>
+    <div class="sidebar-foot">
+      <a href="../index.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M11 4l-7 8 7 8M4 12h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Volver al sitio</a>
+      <a href="#" class="js-logout"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Cerrar sesión</a>
+    </div>
+  </aside>
+
+  <div>
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <button class="sidebar-toggle icon-btn" aria-label="Abrir menú"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#1A1A2E" stroke-width="2" stroke-linecap="round"/></svg></button>
+        <div class="topbar-title">Mi perfil</div>
+      </div>
+      <div class="topbar-right">
+        <button class="icon-btn" aria-label="Notificaciones"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3a5 5 0 0 0-5 5v3.5c0 .8-.3 1.6-.9 2.2L5 15h14l-1.1-1.3c-.6-.6-.9-1.4-.9-2.2V8a5 5 0 0 0-5-5z" stroke="#1A1A2E" stroke-width="1.8"/><path d="M10 18a2 2 0 0 0 4 0" stroke="#1A1A2E" stroke-width="1.8"/></svg><span class="dot"></span></button>
+        <button class="icon-btn" aria-label="Mensajes"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 5h16v11H8l-4 4V5z" stroke="#1A1A2E" stroke-width="1.8" stroke-linejoin="round"/></svg><span class="dot"></span></button>
+        <div class="topbar-avatar">
+          <div class="avatar-circle grad-circle js-user-initials">AL</div>
+          <div class="who"><div class="name js-user-name">Ana López</div><div class="role js-user-role">Freelancer creativo</div></div>
+        </div>
+      </div>
+    </div>
+
+    <main class="app-main">
+
+      <div class="profile-card">
+        <div class="profile-cover"></div>
+        <div class="profile-body">
+          <div class="avatar-circle profile-avatar grad-circle js-user-initials">AL</div>
+          <div class="profile-name-row">
+            <div>
+              <h2 style="font-size:22px;" class="js-user-name">Ana López</h2>
+              <p style="font-size:13.5px;color:var(--gray);margin-top:4px;">Diseñadora gráfica · Lima, Perú</p>
+            </div>
+            <span class="pill" style="background:var(--lilac);color:var(--purple);">★ 4.9 · Top Rated</span>
+          </div>
+
+          <div class="profile-stats">
+            <div class="pstat"><b>28</b><span>Proyectos completados</span></div>
+            <div class="pstat"><b>4.9</b><span>Calificación promedio</span></div>
+            <div class="pstat"><b>Mar 2023</b><span>Miembro desde</span></div>
+          </div>
+
+          <div style="margin-top:26px;">
+            <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Sobre mí</label>
+            <textarea id="bioField" class="field" style="width:100%;padding:13px 14px;border-radius:10px;border:1.5px solid var(--border);font-size:14px;font-family:'Inter',sans-serif;min-height:90px;">Diseñadora gráfica con más de 5 años de experiencia en branding, identidad visual y diseño digital. Me apasiona ayudar a marcas pequeñas a contar su historia a través del diseño.</textarea>
+            <button id="saveBioBtn" class="btn btn-primary btn-sm" style="margin-top:12px;">Guardar cambios</button>
+          </div>
+
+          <div style="margin-top:26px;">
+            <label style="display:block;font-size:13px;font-weight:600;margin-bottom:10px;">Habilidades</label>
+            <div id="skillsWrap"></div>
+            <input id="skillInput" type="text" placeholder="Escribe una habilidad y presiona Enter" style="margin-top:6px;width:100%;max-width:340px;padding:11px 14px;border-radius:10px;border:1.5px solid var(--border);font-size:13.5px;font-family:'Inter',sans-serif;">
+          </div>
+
+          <div style="margin-top:30px;">
+            <label style="display:block;font-size:13px;font-weight:600;margin-bottom:10px;">Portafolio destacado</label>
+            <div class="portfolio-grid">
+              <div class="portfolio-item"></div>
+              <div class="portfolio-item"></div>
+              <div class="portfolio-item"></div>
+              <button class="portfolio-item portfolio-add js-add-portfolio" aria-label="Agregar al portafolio">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="dashboard.js"></script>
+</body>
+</html>

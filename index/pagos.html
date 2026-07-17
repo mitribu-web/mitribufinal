@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagos y facturación — mi tribu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body class="app-body">
+
+<div class="sidebar-overlay"></div>
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <button class="sidebar-close" aria-label="Cerrar menú"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="#1A1A2E" stroke-width="2" stroke-linecap="round"/></svg></button>
+    <div class="sidebar-logo">mi <b>trib</b><b class="u">u</b></div>
+    <div class="sidebar-role js-user-role">Panel</div>
+    <ul class="sidebar-nav">
+      <li><a href="perfil.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20c1.5-4 4.5-6 7-6s5.5 2 7 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Mi perfil</a></li>
+      <li><a href="../servicios.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Explorar servicios</a></li>
+      <li><a href="propuestas.html"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Mis proyectos</a></li>
+      <li><a href="pagos.html" class="active"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.8"/></svg>Pagos y facturación</a></li>
+      <li><a href="#" onclick="return false;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l3 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Configuración</a></li>
+    </ul>
+    <div class="sidebar-foot">
+      <a href="../index.html"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M11 4l-7 8 7 8M4 12h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Volver al sitio</a>
+      <a href="#" class="js-logout"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Cerrar sesión</a>
+    </div>
+  </aside>
+
+  <div>
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:14px;">
+        <button class="sidebar-toggle icon-btn" aria-label="Abrir menú"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="#1A1A2E" stroke-width="2" stroke-linecap="round"/></svg></button>
+        <div class="topbar-title">Pagos y facturación</div>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-avatar">
+          <div class="avatar-circle grad-circle js-user-initials">AL</div>
+          <div class="who"><div class="name js-user-name">Ana López</div><div class="role js-user-role">Freelancer creativo</div></div>
+        </div>
+      </div>
+    </div>
+
+    <main class="app-main">
+
+      <div class="balance-grid">
+        <div class="balance-card">
+          <div class="blab">Saldo disponible</div>
+          <div class="bval" style="color:var(--purple);">S/ 1,250.00</div>
+          <button class="btn btn-primary btn-sm js-withdraw" style="margin-top:14px;">Retirar fondos</button>
+        </div>
+        <div class="balance-card">
+          <div class="blab">En camino</div>
+          <div class="bval" style="color:var(--pink);">S/ 480.00</div>
+          <p style="font-size:12px;color:var(--gray);margin-top:14px;">Se libera al confirmarse la entrega</p>
+        </div>
+        <div class="balance-card">
+          <div class="blab">Total ganado</div>
+          <div class="bval">S/ 8,920.00</div>
+          <p style="font-size:12px;color:var(--gray);margin-top:14px;">Desde marzo 2023</p>
+        </div>
+      </div>
+
+      <div class="tab-row" data-tabgroup="pagos">
+        <button class="tab-btn active" data-tab="resumen">Resumen</button>
+        <button class="tab-btn" data-tab="transacciones">Transacciones</button>
+        <button class="tab-btn" data-tab="facturas">Facturas</button>
+      </div>
+
+      <div class="tab-panel active" data-panel-group="pagos" data-panel="resumen">
+        <div class="card" style="margin-top:26px;">
+          <h4 style="font-size:16px;margin-bottom:16px;">Actividad reciente</h4>
+          <div class="tx-row" data-tx="tx1">
+            <div class="tx-icon" style="background:var(--lilac);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19l7-7a3 3 0 0 0-4-4l-7 7v4h4z" stroke="#6C3CE9" stroke-width="2" stroke-linejoin="round"/></svg></div>
+            <div class="tx-info"><div class="ttitle">Pago recibido — Diseño de logo marca skincare</div><div class="tdate">15 May 2026</div></div>
+            <div class="tx-amount pos">+ S/ 760.00</div>
+          </div>
+          <div class="tx-row" data-tx="tx2">
+            <div class="tx-icon" style="background:var(--pink-soft);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="13" rx="2" stroke="#E63975" stroke-width="2"/><path d="M10 9.5l5 2.5-5 2.5v-5z" fill="#E63975"/></svg></div>
+            <div class="tx-info"><div class="ttitle">Pago recibido — Reel de marca cafetería</div><div class="tdate">12 May 2026</div></div>
+            <div class="tx-amount pos">+ S/ 320.00</div>
+          </div>
+          <div class="tx-row" data-tx="tx3">
+            <div class="tx-icon" style="background:var(--lilac);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="#6C3CE9" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="#6C3CE9" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <div class="tx-info"><div class="ttitle">Pago en camino — Calendario de contenido</div><div class="tdate">8 May 2026</div></div>
+            <div class="tx-amount pos">+ S/ 480.00</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel-group="pagos" data-panel="transacciones">
+        <div class="card" style="margin-top:26px;">
+          <h4 style="font-size:16px;margin-bottom:16px;">Todas las transacciones</h4>
+          <div class="tx-row" data-tx="tx1">
+            <div class="tx-icon" style="background:var(--lilac);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19l7-7a3 3 0 0 0-4-4l-7 7v4h4z" stroke="#6C3CE9" stroke-width="2" stroke-linejoin="round"/></svg></div>
+            <div class="tx-info"><div class="ttitle">Diseño de logo marca skincare</div><div class="tdate">15 May 2026 · Completado</div></div>
+            <div class="tx-amount pos">+ S/ 760.00</div>
+          </div>
+          <div class="tx-row" data-tx="tx2">
+            <div class="tx-icon" style="background:var(--pink-soft);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="13" rx="2" stroke="#E63975" stroke-width="2"/><path d="M10 9.5l5 2.5-5 2.5v-5z" fill="#E63975"/></svg></div>
+            <div class="tx-info"><div class="ttitle">Reel de marca cafetería local</div><div class="tdate">12 May 2026 · Completado</div></div>
+            <div class="tx-amount pos">+ S/ 320.00</div>
+          </div>
+          <div class="tx-row" data-tx="tx3">
+            <div class="tx-icon" style="background:var(--lilac);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="16" rx="2" stroke="#6C3CE9" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="#6C3CE9" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <div class="tx-info"><div class="ttitle">Calendario de contenido tienda de ropa</div><div class="tdate">8 May 2026 · En camino</div></div>
+            <div class="tx-amount pos">+ S/ 480.00</div>
+          </div>
+          <div class="tx-row" data-tx="tx4">
+            <div class="tx-icon" style="background:var(--pink-soft);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M17 8V6a4 4 0 0 0-8 0v2M5 8h14v12H5z" stroke="#E63975" stroke-width="2"/></svg></div>
+            <div class="tx-info"><div class="ttitle">Pago a freelancer — Identidad visual</div><div class="tdate">5 May 2026 · Completado</div></div>
+            <div class="tx-amount neg">- S/ 700.00</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-panel-group="pagos" data-panel="facturas">
+        <div class="card" style="margin-top:26px;">
+          <h4 style="font-size:16px;margin-bottom:10px;">Facturas</h4>
+          <p style="font-size:13.5px;color:var(--gray);">Aún no tienes facturas generadas. Se crean automáticamente cuando completas un proyecto y retiras tus fondos.</p>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="dashboard.js"></script>
+</body>
+</html>
