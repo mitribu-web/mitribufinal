@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrito — mi tribu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo">mi <b>trib</b><b class="u">u</b></a>
+    <div class="nav-search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#6B7280" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="text" placeholder="¿Qué servicio creativo necesitas?" onfocus="location.href='servicios.html'" readonly>
+    </div>
+    <div class="navlinks">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="buscar-freelancers.html">Freelancers</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <div class="navcta">
+      <a href="carrito.html" class="cart-btn" aria-label="Ver carrito">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="21" r="1.4" fill="#1A1A2E"/><circle cx="18" cy="21" r="1.4" fill="#1A1A2E"/><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L21 8H6" stroke="#1A1A2E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="cart-count" style="display:none;">0</span>
+      </a>
+      <a href="app/login.html" class="btn btn-ghost btn-sm">Iniciar sesión</a>
+      <a href="contacto.html" class="btn btn-primary btn-sm">Contáctanos</a>
+      <button class="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-panel">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="buscar-freelancers.html">Freelancers</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="carrito.html">Carrito</a>
+    </div>
+  </nav>
+</header>
+
+<div class="page-header">
+  <div class="wrap">
+    <span class="pill">TU PEDIDO</span>
+    <h1 class="section-title" style="margin-top:16px;">Carrito de compras</h1>
+    <p class="section-sub">Revisa los servicios que añadiste antes de continuar con la solicitud.</p>
+  </div>
+</div>
+
+<section class="reveal">
+  <div class="wrap">
+    <div class="grid-2" style="grid-template-columns:1.6fr 1fr;align-items:start;gap:30px;">
+
+      <div>
+        <div class="card" id="cartEmpty" style="display:none;text-align:center;padding:60px 30px;">
+          <div style="font-size:40px;margin-bottom:14px;">🛒</div>
+          <h3 style="font-size:18px;margin-bottom:8px;">Tu carrito está vacío</h3>
+          <p style="font-size:14px;color:var(--gray);margin-bottom:22px;">Explora nuestros servicios y añade los que necesites para tu marca.</p>
+          <a href="servicios.html" class="btn btn-primary">Explorar servicios →</a>
+        </div>
+
+        <div class="card" style="padding:8px 32px;">
+          <div id="cartWrap"></div>
+        </div>
+      </div>
+
+      <div id="cartSummary" style="display:none;">
+        <div class="cart-summary">
+          <h4 style="font-size:16px;margin-bottom:16px;">Resumen del pedido</h4>
+          <div class="cs-row"><span>Servicios (<span id="cartCount">0</span>)</span><span id="cartTotal">S/ 0.00</span></div>
+          <div class="cs-row"><span>Comisión de plataforma</span><span>Incluida</span></div>
+          <div class="cs-row cs-total"><span>Total estimado</span><span id="cartTotal2">S/ 0.00</span></div>
+          <button id="checkoutBtn" class="btn btn-primary" style="width:100%;margin-top:16px;">Proceder al pago →</button>
+          <p style="font-size:11.5px;color:var(--gray);text-align:center;margin-top:12px;">El precio final puede variar según los detalles de cada proyecto.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="checkoutPanel" style="margin-top:30px;"></div>
+  </div>
+</section>
+
+<footer class="footer-rich">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="flogo">mi <b>trib</b><b class="u">u</b></div>
+        <p class="fdesc">Ecommerce peruano que conecta marcas y emprendedores con talento creativo verificado. Talento creativo, resultados reales.</p>
+      </div>
+      <div>
+        <h5>Servicios</h5>
+        <ul>
+          <li><a href="servicios.html">Diseño Gráfico</a></li>
+          <li><a href="servicios.html">Marketing Digital</a></li>
+          <li><a href="servicios.html">Videos y Animación</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Compañía</h5>
+        <ul>
+          <li><a href="nosotros.html">Sobre mi tribu</a></li>
+          <li><a href="buscar-freelancers.html">Buscar freelancers</a></li>
+          <li><a href="app/login.html">Únete como freelancer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li>hola@mitribu.pe</li>
+          <li>+51 999 999 999</li>
+          <li>Lima, Perú</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>© 2026 mi tribu — proyecto académico</span>
+      <div class="footer-links"><a href="contacto.html">Contacto</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

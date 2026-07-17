@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buscar freelancers — mi tribu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo">mi <b>trib</b><b class="u">u</b></a>
+    <div class="nav-search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#6B7280" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="text" placeholder="¿Qué servicio creativo necesitas?" onfocus="location.href='servicios.html'" readonly>
+    </div>
+    <div class="navlinks">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="buscar-freelancers.html" class="active">Freelancers</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <div class="navcta">
+      <a href="carrito.html" class="cart-btn" aria-label="Ver carrito">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="21" r="1.4" fill="#1A1A2E"/><circle cx="18" cy="21" r="1.4" fill="#1A1A2E"/><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L21 8H6" stroke="#1A1A2E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="cart-count" style="display:none;">0</span>
+      </a>
+      <a href="app/login.html" class="btn btn-ghost btn-sm">Iniciar sesión</a>
+      <a href="contacto.html" class="btn btn-primary btn-sm">Contáctanos</a>
+      <button class="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-panel">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="buscar-freelancers.html">Freelancers</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="carrito.html">Carrito</a>
+    </div>
+  </nav>
+</header>
+
+<div class="page-header">
+  <div class="wrap">
+    <span class="pill">TALENTO VERIFICADO</span>
+    <h1 class="section-title" style="margin-top:16px;">Encuentra al freelancer ideal para tu marca</h1>
+    <p class="section-sub">Perfiles verificados, con portafolio real y valoraciones de otros clientes.</p>
+    <div class="filter-row">
+      <button class="filter-chip talent-filter active" data-filter="todos">Todos</button>
+      <button class="filter-chip talent-filter" data-filter="diseno">Diseño Gráfico</button>
+      <button class="filter-chip talent-filter" data-filter="video">Videos y Animación</button>
+      <button class="filter-chip talent-filter" data-filter="marketing">Marketing Digital</button>
+    </div>
+  </div>
+</div>
+
+<section class="reveal">
+  <div class="wrap">
+    <div class="grid-3" id="talentGrid">
+
+      <div class="talent-card" data-cat="diseno">
+        <div class="tc-top">
+          <div class="tc-avatar grad-circle">AL</div>
+          <div>
+            <div class="tc-name">Ana López</div>
+            <div class="tc-role">Diseñadora Gráfica</div>
+            <div class="tc-rating">★ 4.9 · 28 proyectos</div>
+          </div>
+        </div>
+        <p class="tc-bio">Especialista en branding e identidad visual para marcas de moda y belleza.</p>
+        <div class="tc-skills"><span>Branding</span><span>Logo</span><span>Packaging</span></div>
+        <a href="perfil-publico.html?id=fl1" class="btn btn-primary btn-sm" style="width:100%;">Ver perfil →</a>
+      </div>
+
+      <div class="talent-card" data-cat="video">
+        <div class="tc-top">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#E63975,#6C3CE9);">CT</div>
+          <div>
+            <div class="tc-name">Carlos Torres</div>
+            <div class="tc-role">Editor de Video</div>
+            <div class="tc-rating">★ 4.7 · 15 proyectos</div>
+          </div>
+        </div>
+        <p class="tc-bio">Reels y contenido audiovisual dinámico para marcas de alimentos y retail.</p>
+        <div class="tc-skills"><span>Reels</span><span>Motion</span><span>Edición</span></div>
+        <a href="perfil-publico.html?id=fl2" class="btn btn-primary btn-sm" style="width:100%;">Ver perfil →</a>
+      </div>
+
+      <div class="talent-card" data-cat="marketing">
+        <div class="tc-top">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#4B22B0,#E63975);">MF</div>
+          <div>
+            <div class="tc-name">María Fernández</div>
+            <div class="tc-role">Estratega Digital</div>
+            <div class="tc-rating">★ 5.0 · 41 proyectos</div>
+          </div>
+        </div>
+        <p class="tc-bio">Estrategia de contenido y pauta digital para negocios en crecimiento.</p>
+        <div class="tc-skills"><span>Estrategia</span><span>Pauta</span><span>Contenido</span></div>
+        <a href="perfil-publico.html?id=fl3" class="btn btn-primary btn-sm" style="width:100%;">Ver perfil →</a>
+      </div>
+
+      <div class="talent-card" data-cat="diseno">
+        <div class="tc-top">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#6C3CE9,#8B5CF6);">CR</div>
+          <div>
+            <div class="tc-name">Camila Rodríguez</div>
+            <div class="tc-role">Diseñadora Gráfica</div>
+            <div class="tc-rating">★ 5.0 · 120 proyectos</div>
+          </div>
+        </div>
+        <p class="tc-bio">Diseño de piezas para redes sociales y campañas visuales de alto impacto.</p>
+        <div class="tc-skills"><span>Redes</span><span>Piezas gráficas</span><span>Ilustración</span></div>
+        <a href="perfil-publico.html?id=fl4" class="btn btn-primary btn-sm" style="width:100%;">Ver perfil →</a>
+      </div>
+
+      <div class="talent-card" data-cat="video">
+        <div class="tc-top">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#FB923C,#E63975);">DR</div>
+          <div>
+            <div class="tc-name">Diego Ramos</div>
+            <div class="tc-role">Animador 2D</div>
+            <div class="tc-rating">★ 4.8 · 19 proyectos</div>
+          </div>
+        </div>
+        <p class="tc-bio">Animaciones explicativas y video institucional para marcas de tecnología.</p>
+        <div class="tc-skills"><span>Animación 2D</span><span>Storyboard</span><span>Institucional</span></div>
+        <a href="perfil-publico.html?id=fl5" class="btn btn-primary btn-sm" style="width:100%;">Ver perfil →</a>
+      </div>
+
+      <div class="talent-card" data-cat="marketing">
+        <div class="tc-top">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#6C3CE9,#4B22B0);">RS</div>
+          <div>
+            <div class="tc-name">Rodrigo Salas</div>
+            <div class="tc-role">Especialista en Pauta</div>
+            <div class="tc-rating">★ 4.6 · 22 proyectos</div>
+          </div>
+        </div>
+        <p class="tc-bio">Campañas en Meta y Google Ads con foco en conversión para MYPEs.</p>
+        <div class="tc-skills"><span>Meta Ads</span><span>Google Ads</span><span>Analítica</span></div>
+        <a href="perfil-publico.html?id=fl6" class="btn btn-primary btn-sm" style="width:100%;">Ver perfil →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="tint">
+  <div class="wrap">
+    <div class="closing" style="padding:44px;">
+      <span class="eyebrow">¿Eres freelancer creativo?</span>
+      <h2 style="font-size:24px;">Únete a mi tribu y encuentra clientes reales, con pago seguro.</h2>
+      <div style="margin-top:24px;">
+        <a href="app/login.html" class="btn" style="background:#fff;color:var(--purple);">Crear mi perfil →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-rich">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="flogo">mi <b>trib</b><b class="u">u</b></div>
+        <p class="fdesc">Ecommerce peruano que conecta marcas y emprendedores con talento creativo verificado. Talento creativo, resultados reales.</p>
+      </div>
+      <div>
+        <h5>Servicios</h5>
+        <ul>
+          <li><a href="servicios.html">Diseño Gráfico</a></li>
+          <li><a href="servicios.html">Marketing Digital</a></li>
+          <li><a href="servicios.html">Videos y Animación</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Compañía</h5>
+        <ul>
+          <li><a href="nosotros.html">Sobre mi tribu</a></li>
+          <li><a href="buscar-freelancers.html">Buscar freelancers</a></li>
+          <li><a href="app/login.html">Únete como freelancer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li>hola@mitribu.pe</li>
+          <li>+51 999 999 999</li>
+          <li>Lima, Perú</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>© 2026 mi tribu — proyecto académico</span>
+      <div class="footer-links"><a href="contacto.html">Contacto</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

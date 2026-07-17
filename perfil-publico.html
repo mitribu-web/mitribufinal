@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil de freelancer — mi tribu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="index.html" class="logo">mi <b>trib</b><b class="u">u</b></a>
+    <div class="nav-search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#6B7280" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="text" placeholder="¿Qué servicio creativo necesitas?" onfocus="location.href='servicios.html'" readonly>
+    </div>
+    <div class="navlinks">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="buscar-freelancers.html" class="active">Freelancers</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+    <div class="navcta">
+      <a href="carrito.html" class="cart-btn" aria-label="Ver carrito">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="21" r="1.4" fill="#1A1A2E"/><circle cx="18" cy="21" r="1.4" fill="#1A1A2E"/><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L21 8H6" stroke="#1A1A2E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="cart-count" style="display:none;">0</span>
+      </a>
+      <a href="app/login.html" class="btn btn-ghost btn-sm">Iniciar sesión</a>
+      <a href="contacto.html" class="btn btn-primary btn-sm">Contáctanos</a>
+      <button class="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-panel">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="buscar-freelancers.html">Freelancers</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="carrito.html">Carrito</a>
+    </div>
+  </nav>
+</header>
+
+<section class="reveal" style="padding-top:44px;">
+  <div class="wrap" style="max-width:900px;">
+    <a href="buscar-freelancers.html" style="display:inline-flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;color:var(--purple);margin-bottom:20px;">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M11 4l-7 8 7 8M4 12h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Volver a la búsqueda
+    </a>
+
+    <div class="pubprofile-card">
+      <div class="pubprofile-cover"></div>
+      <div class="pubprofile-body">
+        <div class="pubprofile-avatar grad-circle" id="pp-avatar">AL</div>
+        <div class="profile-name-row">
+          <div>
+            <h2 style="font-size:23px;" id="pp-name">Ana López</h2>
+            <p style="font-size:13.5px;color:var(--gray);margin-top:4px;" id="pp-role">Diseñadora gráfica · Lima, Perú</p>
+          </div>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <span class="pill" style="background:var(--lilac);color:var(--purple);" id="pp-rating">★ 4.9 · Top Rated</span>
+          </div>
+        </div>
+
+        <div class="profile-stats">
+          <div class="pstat"><b id="pp-proyectos">28</b><span>Proyectos completados</span></div>
+          <div class="pstat"><b id="pp-calif">4.9</b><span>Calificación promedio</span></div>
+          <div class="pstat"><b id="pp-desde">Mar 2023</b><span>Miembro desde</span></div>
+        </div>
+
+        <div style="margin-top:26px;">
+          <label style="display:block;font-size:13px;font-weight:600;margin-bottom:8px;">Sobre mí</label>
+          <p style="font-size:14px;color:var(--navy);line-height:1.6;" id="pp-bio">—</p>
+        </div>
+
+        <div style="margin-top:26px;">
+          <label style="display:block;font-size:13px;font-weight:600;margin-bottom:10px;">Habilidades</label>
+          <div id="pp-skills"></div>
+        </div>
+
+        <div style="margin-top:30px;">
+          <label style="display:block;font-size:13px;font-weight:600;margin-bottom:10px;">Portafolio</label>
+          <div class="portfolio-grid" style="grid-template-columns:repeat(4,1fr);">
+            <div class="portfolio-item"></div>
+            <div class="portfolio-item"></div>
+            <div class="portfolio-item"></div>
+            <div class="portfolio-item"></div>
+          </div>
+        </div>
+
+        <div style="margin-top:30px;">
+          <label style="display:block;font-size:13px;font-weight:600;margin-bottom:6px;">Reseñas de clientes</label>
+          <div id="pp-reviews"></div>
+        </div>
+
+        <div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="contacto.html" id="pp-contratar" class="btn btn-primary">Contratar a este freelancer →</a>
+          <a href="contacto.html" class="btn btn-ghost">Enviar mensaje</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-rich" style="margin-top:40px;">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="flogo">mi <b>trib</b><b class="u">u</b></div>
+        <p class="fdesc">Ecommerce peruano que conecta marcas y emprendedores con talento creativo verificado. Talento creativo, resultados reales.</p>
+      </div>
+      <div>
+        <h5>Servicios</h5>
+        <ul>
+          <li><a href="servicios.html">Diseño Gráfico</a></li>
+          <li><a href="servicios.html">Marketing Digital</a></li>
+          <li><a href="servicios.html">Videos y Animación</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Compañía</h5>
+        <ul>
+          <li><a href="nosotros.html">Sobre mi tribu</a></li>
+          <li><a href="buscar-freelancers.html">Buscar freelancers</a></li>
+          <li><a href="app/login.html">Únete como freelancer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li>hola@mitribu.pe</li>
+          <li>+51 999 999 999</li>
+          <li>Lima, Perú</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>© 2026 mi tribu — proyecto académico</span>
+      <div class="footer-links"><a href="contacto.html">Contacto</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  const FREELANCERS = {
+    fl1: { name:'Ana López', role:'Diseñadora gráfica · Lima, Perú', rating:'★ 4.9 · Top Rated', proyectos:28, calif:'4.9', desde:'Mar 2023',
+      bio:'Diseñadora gráfica con más de 5 años de experiencia en branding, identidad visual y diseño digital para marcas de moda y belleza.',
+      skills:['Branding','Diseño de logo','Identidad visual','Packaging'], initials:'AL', grad:'linear-gradient(135deg,#6C3CE9,#E63975)',
+      reviews:[{name:'Tienda Luna',stars:'★★★★★',text:'Excelente atención al detalle, entregó antes de tiempo.'},{name:'Café Andino',stars:'★★★★★',text:'Muy profesional, entendió la esencia de la marca.'}] },
+    fl2: { name:'Carlos Torres', role:'Editor de video · Lima, Perú', rating:'★ 4.7 · Verificado', proyectos:15, calif:'4.7', desde:'Ago 2023',
+      bio:'Editor especializado en contenido para redes sociales: reels, motion graphics y piezas dinámicas para marcas de alimentos y retail.',
+      skills:['Reels','Motion graphics','Edición','Colorización'], initials:'CT', grad:'linear-gradient(135deg,#E63975,#6C3CE9)',
+      reviews:[{name:'FitLife Perú',stars:'★★★★★',text:'Los reels aumentaron nuestro alcance muchísimo.'},{name:'Bodega San José',stars:'★★★★☆',text:'Buen trabajo, comunicación clara durante el proceso.'}] },
+    fl3: { name:'María Fernández', role:'Estratega digital · Lima, Perú', rating:'★ 5.0 · Top Rated', proyectos:41, calif:'5.0', desde:'Ene 2022',
+      bio:'Especialista en estrategia de contenido y pauta digital, ayudando a negocios pequeños a crecer con presupuestos acotados.',
+      skills:['Estrategia de marca','Pauta digital','Contenido','Analítica'], initials:'MF', grad:'linear-gradient(135deg,#4B22B0,#E63975)',
+      reviews:[{name:'Boutique Nova',stars:'★★★★★',text:'Triplicamos nuestras ventas online en 2 meses.'},{name:'Estudio Fit',stars:'★★★★★',text:'Muy clara explicando resultados y métricas.'}] },
+    fl4: { name:'Camila Rodríguez', role:'Diseñadora gráfica · Lima, Perú', rating:'★ 5.0 · Top Rated', proyectos:120, calif:'5.0', desde:'Jun 2021',
+      bio:'Diseño de piezas para redes sociales y campañas visuales, con más de 120 proyectos entregados para marcas peruanas.',
+      skills:['Redes sociales','Piezas gráficas','Ilustración','Branding'], initials:'CR', grad:'linear-gradient(135deg,#6C3CE9,#8B5CF6)',
+      reviews:[{name:'Marca Runa',stars:'★★★★★',text:'Nuestro feed nunca se vio tan profesional.'},{name:'Sabor Norteño',stars:'★★★★★',text:'Rápida, creativa y siempre a tiempo.'}] },
+    fl5: { name:'Diego Ramos', role:'Animador 2D · Lima, Perú', rating:'★ 4.8 · Verificado', proyectos:19, calif:'4.8', desde:'Oct 2023',
+      bio:'Animaciones explicativas y video institucional para marcas de tecnología y servicios profesionales.',
+      skills:['Animación 2D','Storyboard','Video institucional'], initials:'DR', grad:'linear-gradient(135deg,#FB923C,#E63975)',
+      reviews:[{name:'TechSol Perú',stars:'★★★★★',text:'El video explicó nuestro producto perfectamente.'},{name:'Consultora Prisma',stars:'★★★★☆',text:'Buena calidad, entrega dentro del plazo.'}] },
+    fl6: { name:'Rodrigo Salas', role:'Especialista en pauta digital · Lima, Perú', rating:'★ 4.6 · Verificado', proyectos:22, calif:'4.6', desde:'Feb 2023',
+      bio:'Campañas en Meta Ads y Google Ads con foco en conversión, especializado en MYPEs con presupuestos reducidos.',
+      skills:['Meta Ads','Google Ads','Analítica','Optimización'], initials:'RS', grad:'linear-gradient(135deg,#6C3CE9,#4B22B0)',
+      reviews:[{name:'Zapatería Andina',stars:'★★★★★',text:'Bajó nuestro costo por venta a la mitad.'},{name:'Panadería Trigo',stars:'★★★★☆',text:'Buen manejo de presupuesto y resultados claros.'}] }
+  };
+
+  const id = new URLSearchParams(window.location.search).get('id') || 'fl1';
+  const f = FREELANCERS[id] || FREELANCERS['fl1'];
+
+  document.getElementById('pp-name').textContent = f.name;
+  document.getElementById('pp-role').textContent = f.role;
+  document.getElementById('pp-rating').textContent = f.rating;
+  document.getElementById('pp-proyectos').textContent = f.proyectos;
+  document.getElementById('pp-calif').textContent = f.calif;
+  document.getElementById('pp-desde').textContent = f.desde;
+  document.getElementById('pp-bio').textContent = f.bio;
+  document.getElementById('pp-avatar').textContent = f.initials;
+  document.getElementById('pp-avatar').style.background = f.grad;
+  document.getElementById('pp-contratar').href = `contacto.html?servicio=${encodeURIComponent('Otro / no estoy seguro')}`;
+
+  const skillsWrap = document.getElementById('pp-skills');
+  f.skills.forEach(s => {
+    const pill = document.createElement('span');
+    pill.className = 'tag-pill';
+    pill.style.cursor = 'default';
+    pill.textContent = s;
+    skillsWrap.appendChild(pill);
+  });
+
+  const reviewsWrap = document.getElementById('pp-reviews');
+  f.reviews.forEach(r => {
+    const div = document.createElement('div');
+    div.className = 'review-item';
+    div.innerHTML = `<span class="rname">${r.name}</span><span class="rstars">${r.stars}</span><p>${r.text}</p>`;
+    reviewsWrap.appendChild(div);
+  });
+</script>
+</body>
+</html>

@@ -14,22 +14,33 @@
 <header>
   <nav class="nav">
     <a href="index.html" class="logo">mi <b>trib</b><b class="u">u</b></a>
+    <div class="nav-search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#6B7280" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="text" placeholder="¿Qué servicio creativo necesitas?" onfocus="location.href='servicios.html'" readonly>
+    </div>
     <div class="navlinks">
       <a href="index.html">Inicio</a>
       <a href="servicios.html">Servicios</a>
+      <a href="buscar-freelancers.html">Freelancers</a>
       <a href="nosotros.html">Nosotros</a>
       <a href="contacto.html" class="active">Contacto</a>
     </div>
     <div class="navcta">
-      <a href="app/login.html" class="btn btn-ghost btn-sm" style="margin-right:4px;">Iniciar sesión</a>
+      <a href="carrito.html" class="cart-btn" aria-label="Ver carrito">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="21" r="1.4" fill="#1A1A2E"/><circle cx="18" cy="21" r="1.4" fill="#1A1A2E"/><path d="M3 4h2l2.4 12.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L21 8H6" stroke="#1A1A2E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="cart-count" style="display:none;">0</span>
+      </a>
+      <a href="app/login.html" class="btn btn-ghost btn-sm">Iniciar sesión</a>
       <a href="contacto.html" class="btn btn-primary btn-sm">Contáctanos</a>
       <button class="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
     <div class="mobile-panel">
       <a href="index.html">Inicio</a>
       <a href="servicios.html">Servicios</a>
+      <a href="buscar-freelancers.html">Freelancers</a>
       <a href="nosotros.html">Nosotros</a>
       <a href="contacto.html">Contacto</a>
+      <a href="carrito.html">Carrito</a>
     </div>
   </nav>
 </header>
@@ -146,16 +157,42 @@
   </div>
 </section>
 
-<footer>
-  <div class="wrap footer-row">
-    <div class="logo" style="font-size:18px;">mi <b>trib</b><b class="u">u</b></div>
-    <div class="footer-links">
-      <a href="index.html">Inicio</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="contacto.html">Contacto</a>
+<footer class="footer-rich">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="flogo">mi <b>trib</b><b class="u">u</b></div>
+        <p class="fdesc">Ecommerce peruano que conecta marcas y emprendedores con talento creativo verificado. Talento creativo, resultados reales.</p>
+      </div>
+      <div>
+        <h5>Servicios</h5>
+        <ul>
+          <li><a href="servicios.html">Diseño Gráfico</a></li>
+          <li><a href="servicios.html">Marketing Digital</a></li>
+          <li><a href="servicios.html">Videos y Animación</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Compañía</h5>
+        <ul>
+          <li><a href="nosotros.html">Sobre mi tribu</a></li>
+          <li><a href="buscar-freelancers.html">Buscar freelancers</a></li>
+          <li><a href="app/login.html">Únete como freelancer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li>hola@mitribu.pe</li>
+          <li>+51 999 999 999</li>
+          <li>Lima, Perú</li>
+        </ul>
+      </div>
     </div>
-    <div>Ecommerce de talento creativo · Lima, Perú</div>
+    <div class="fbottom">
+      <span>© 2026 mi tribu — proyecto académico</span>
+      <div class="footer-links"><a href="contacto.html">Contacto</a></div>
+    </div>
   </div>
 </footer>
 
